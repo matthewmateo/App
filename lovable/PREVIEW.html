@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Hosted Lovable - Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; }
+        .gradient-text { background: linear-gradient(to right, #6366f1, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-indigo-500">🚀 Self-Hosted Lovable</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-6xl font-bold mb-6 gradient-text">
+                Self-Hosted Lovable
+            </h1>
+            <p class="text-2xl text-gray-300 mb-8">
+                Build apps with AI, on your own server
+            </p>
+            <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                A powerful AI-powered development environment that runs completely on your infrastructure.
+                Generate code, build UIs, and deploy apps - all from your browser.
+            </p>
+
+            <!-- Feature Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-6">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold mb-2">AI-Powered</h3>
+                    <p class="text-gray-400">
+                        Generate code using OpenAI, Anthropic, or run local models with Ollama
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-6">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-semibold mb-2">Monaco Editor</h3>
+                    <p class="text-gray-400">
+                        Full VS Code editing experience with IntelliSense and syntax highlighting
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-6">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-2">Live Preview</h3>
+                    <p class="text-gray-400">
+                        See your changes instantly with hot reload and live preview
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex gap-4 justify-center mb-16">
+                <button class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-lg transition">
+                    Get Started
+                </button>
+                <button class="px-8 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg text-lg transition">
+                    View on GitHub
+                </button>
+            </div>
+
+            <!-- Features List -->
+            <div class="text-left bg-gray-800 rounded-lg shadow-lg border border-gray-700 p-8 max-w-2xl mx-auto">
+                <h2 class="text-2xl font-bold mb-4">Features</h2>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span><strong>PocketBase Backend:</strong> Lightweight, fast database with built-in auth</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span><strong>SvelteKit Frontend:</strong> Modern, reactive UI framework</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span><strong>Monaco Editor:</strong> The same editor that powers VS Code</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span><strong>Multi-AI Support:</strong> Works with OpenAI, Anthropic Claude, or local models</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span><strong>Project Management:</strong> Organize and manage multiple projects</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-1">✓</span>
+                        <span><strong>Self-Hosted:</strong> Complete control over your data and infrastructure</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Editor Preview Mockup -->
+            <div class="mt-16 bg-gray-800 rounded-lg shadow-2xl border border-gray-700 overflow-hidden">
+                <div class="bg-gray-700 px-4 py-2 border-b border-gray-600 flex items-center gap-2">
+                    <div class="flex gap-1.5">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <span class="text-sm text-gray-300 ml-4">Editor - index.html</span>
+                </div>
+                <div class="flex">
+                    <!-- File Tree -->
+                    <div class="w-48 bg-gray-800 border-r border-gray-700 p-3">
+                        <div class="text-xs text-gray-400 mb-2">FILES</div>
+                        <div class="space-y-1 text-sm">
+                            <div class="text-indigo-400">📄 index.html</div>
+                            <div class="text-gray-400">📄 style.css</div>
+                            <div class="text-gray-400">📄 script.js</div>
+                        </div>
+                    </div>
+                    <!-- Code Editor -->
+                    <div class="flex-1 p-4 font-mono text-sm">
+                        <pre class="text-gray-300"><code><span class="text-gray-500">&lt;!DOCTYPE html&gt;</span>
+<span class="text-pink-500">&lt;html</span> <span class="text-purple-400">lang</span>=<span class="text-green-400">"en"</span><span class="text-pink-500">&gt;</span>
+<span class="text-pink-500">&lt;head&gt;</span>
+  <span class="text-pink-500">&lt;title&gt;</span>My App<span class="text-pink-500">&lt;/title&gt;</span>
+<span class="text-pink-500">&lt;/head&gt;</span>
+<span class="text-pink-500">&lt;body&gt;</span>
+  <span class="text-pink-500">&lt;h1&gt;</span>Hello World!<span class="text-pink-500">&lt;/h1&gt;</span>
+<span class="text-pink-500">&lt;/body&gt;</span>
+<span class="text-pink-500">&lt;/html&gt;</span></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-gray-500 text-sm">
+                <p>✨ This is a static preview. Deploy to see the full interactive application.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
