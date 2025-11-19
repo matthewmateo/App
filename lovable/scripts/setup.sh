@@ -21,9 +21,9 @@ if [ ! -f "$POCKETBASE_BIN" ]; then
     mkdir -p "$POCKETBASE_DIR"
 
     if [ "$MACHINE" = "Linux" ]; then
-        curl -L https://github.com/pocketbase/pocketbase/releases/download/v0.20.1/pocketbase_0.20.1_linux_amd64.zip -o pb.zip
+        curl -L https://github.com/pocketbase/pocketbase/releases/download/v0.21.3/pocketbase_0.21.3_linux_amd64.zip -o pb.zip
     elif [ "$MACHINE" = "Mac" ]; then
-        curl -L https://github.com/pocketbase/pocketbase/releases/download/v0.20.1/pocketbase_0.20.1_darwin_amd64.zip -o pb.zip
+        curl -L https://github.com/pocketbase/pocketbase/releases/download/v0.21.3/pocketbase_0.21.3_darwin_amd64.zip -o pb.zip
     else
         echo "❌ Unsupported OS. Please download PocketBase manually."
         exit 1
